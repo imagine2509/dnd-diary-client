@@ -3,9 +3,11 @@ import App from '@/App.vue';
 import '@/css/reset.scss';
 import router from '@/router';
 import { createPinia } from 'pinia';
+import { createI18n } from 'vue-i18n';
+import { en } from '@/locale/en.ts';
+import { ru } from '@/locale/ru.ts';
 
 const app = createApp(App);
-const pinia = createPinia();
 
 // vue router
 app.use(router);
@@ -29,8 +31,13 @@ app.directive('lazyLoad', (el, binding) => {
     observer.observe(el);
 });
 
+const pinia = createPinia();
 // pinia
 app.use(pinia);
+
+// locales
+const i18n = createI18n({ legacy: false, locale: 'en', fallbackLocale: 'ru', messages: { en: en, ru: ru } });
+app.use(i18n);
 
 // mount vue on div#app
 app.mount('#app');
