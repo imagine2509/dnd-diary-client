@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import NavBar from '@/components/Header/components/NavBar/NavBar.vue';
-import LocaleSwitcher from '@/components/Header/components/LocaleSwitcher/LocaleSwitcher.vue';
+import NavBar from '@/components/PageHeader/components/NavBar/NavBar.vue';
+import LocaleSwitcher from '@/components/PageHeader/components/LocaleSwitcher/LocaleSwitcher.vue';
 </script>
 
 <template>
     <header>
         <NavBar />
-        <LocaleSwitcher/>
+        <LocaleSwitcher />
     </header>
 </template>
 
