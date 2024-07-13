@@ -17,12 +17,28 @@
 </template>
 
 <style scoped>
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 25px;
+}
 ul {
+    width: 100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     display: flex;
-    justify-content: space-around;
+    gap: 15px;
+    justify-content: flex-end;
+}
+li {
+    display: flex;
+    align-items: center;
+    a {
+        text-decoration: none;
+        font-size: 24px;
+    }
 }
 </style>

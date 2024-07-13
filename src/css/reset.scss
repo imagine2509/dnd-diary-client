@@ -3,16 +3,15 @@
  * https://www.fluid-type-scale.com/calculate?minFontSize=16&minWidth=320&minRatio=1.25&maxFontSize=20&maxWidth=1440&maxRatio=1.4&steps=tiny%2Csmall%2Cmedium%2Clarge%2Chuge%2Cgigantic%2Cenormous&baseStep=medium&prefix=font-size&decimals=3&useRems=on&remValue=16&previewFont=Inter&previewText=Almost+before+we+knew+it%2C+we+had+left+the+ground&previewWidth=1920
  */
 :root {
-    --font-family-primary: sans-serif;
+    --font-family-primary: 'Walter Turncoat', cursive;
 
     --border-radius: 0.5rem;
 
     --color--white: #fff;
-    --color--black: #232323;
     --color--gray: #555;
     --color--gray-dark: #424242;
     --color--gray-light: #dbdbdb;
-    --color--primary: #f65261;
+    --color--primary: #232323;
     --color--secondary: #7c44fc;
 
     --font-size-tiny: clamp(0.8rem, 0.13vw + 0.77rem, 0.89rem);
@@ -38,10 +37,10 @@
 .docs-story,
 body {
     font-family: var(--font-family-primary);
-    color: var(--color--white);
+    color: var(--color--primary);
     line-height: 1;
     font-size: 16px;
-    background: var(--color--black);
+    background: var(--color--white);
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
 }
@@ -69,12 +68,8 @@ h3,
 h4,
 h5,
 h6 {
+    color: var(--color--primary);
     overflow-wrap: break-word;
-    padding-block-end: 1rem;
-}
-
-p {
-    line-height: 1.5;
 }
 
 small {
@@ -101,17 +96,6 @@ button {
 
     /* Corrects inability to style clickable `input` types in iOS */
     -webkit-appearance: none;
-}
-
-ul {
-    margin-inline-start: 2rem;
-}
-
-ol {
-    margin-inline-start: 2rem;
-    li {
-        list-style: decimal;
-    }
 }
 
 a {
