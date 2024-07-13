@@ -4,6 +4,7 @@ export const en = {
         Home: 'Home',
         About: 'About',
         Contact: 'Contact',
-        Login: 'Login'
+        Login: 'Login',
+        Register: 'Register'
     }
 };

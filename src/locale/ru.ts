@@ -4,6 +4,7 @@ export const ru = {
         Home: 'Главная',
         About: 'О проекте',
         Contact: 'Контакты',
-        Login: 'Войти'
+        Login: 'Войти',
+        Register: 'Регистрация'
     }
 };
