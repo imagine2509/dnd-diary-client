@@ -1,6 +1,6 @@
 :root {
     --font-family-primary: 'Walter Turncoat', cursive;
-    --color--primary: #232323;
+    --color--primary: oklch(78% 0 201.18);
 }
 
 /* Box sizing rules */
@@ -15,7 +15,7 @@ html {
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
-    font-family: var(--font-family-primary);
+    font-family: var(--font-family-primary), serif;
 }
 
 /* Remove default margin in favour of better control in authored CSS */

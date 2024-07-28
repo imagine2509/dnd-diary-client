@@ -11,12 +11,12 @@ const handleClick = (): void => {
 
 <template>
     <header>
-        <LogoField/>
+        <LogoField />
         <NavBar />
         <div class="buttons_container">
-        <DefaultButton :content="$t('header.Login')" @click="handleClick" />
+            <DefaultButton :content="$t('header.Login')" @click="handleClick" />
             <DefaultButton :content="$t('header.Register')" @click="handleClick" />
-        <LocaleSwitcher />
+            <LocaleSwitcher />
         </div>
     </header>
 </template>
@@ -27,6 +27,11 @@ header {
     justify-content: space-between;
     align-content: center;
     padding: 20px;
+    background-color: rgba(0, 0, 0, 1);
+    color: var(--color--primary);
+    -webkit-box-shadow: -1px 25px 26px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 25px 26px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 25px 26px -3px rgba(0, 0, 0, 0.75);
 }
 
 .buttons_container {
